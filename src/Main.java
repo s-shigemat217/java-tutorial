@@ -1,5 +1,18 @@
+import comment.Zenhan.*;
+import comment.Kouhan.*;
+
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello,world!");
+    public static void main(String[] args) throws Exception {
+        for(int i = 0; i <= 100; i++){
+            if(i % 3 == 0){
+                System.out.println("Fizz");
+            }else if(i % 5 == 0){
+                System.out.println("Buzz");
+            }else if(i % 3 == 0 && i % 5 == 0){
+                System.out.println("FizzBuzz");
+            }else{
+                System.out.println(i);
+            }
+        }
     }
 }
